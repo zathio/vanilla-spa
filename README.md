@@ -3,6 +3,6 @@
 My approach to build simple apps with vanilla javascript   
 This is a **very** basic spa, there is routing, a custom component and state management
 
-[Live app here]()
+[Live app here](https://heuristic-shannon-35b1fc.netlify.app/)
 
 ![preview image](./preview.jpg)
