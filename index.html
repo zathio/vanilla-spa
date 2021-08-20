@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="icon" href="src/img/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
     <nav>
@@ -20,5 +22,9 @@
     <main id="app"></main>
     
     <script type="module" src="./src/js/main.js"></script>
+
+    <script>
+        if ("serviceWorker" in navigator) navigator.serviceWorker.register("service-worker.js");
+    </script>
 </body>
 </html>
