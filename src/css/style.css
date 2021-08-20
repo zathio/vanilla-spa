@@ -1,0 +1,73 @@
+:root {
+    --primary: #222831;
+    --secondary: #30475e;
+    --secondary-light: #3a5a7a;
+    --accent: #f05454;
+    --neutral: #eeeeee;
+
+    font-size: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+body {
+    color: var(--neutral);
+    padding: 1rem clamp(1.5rem, 6vw, 3rem);
+    background-color: var(--primary);
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin-right: .75em;
+    color: var(--accent);
+}
+
+main {
+    margin: 3rem 0;
+}
+
+h1 {
+    font-size: 2.3rem;
+    margin-bottom: .5rem;
+}
+
+p {
+    margin-bottom: 2rem;
+}
+
+click-counter button {
+    font-weight: 600;
+    border: 2px solid var(--neutral);
+    border-radius: 5px;
+    color: var(--neutral);
+    background-color: var(--secondary);
+    width: 8.5rem;
+    height: 3rem;
+    display: grid;
+    place-items: center;
+    transition: opacity .1s, background-color .1s;
+}
+click-counter button:active {
+    background-color: var(--secondary-light);
+}
+
+@media (min-width: 1000px)  {
+    click-counter button {
+        cursor: pointer;
+    }
+    click-counter button:hover {
+        background-color: var(--secondary-light);
+    }
+    click-counter button:active {
+        opacity: .7;
+    }
+}
