@@ -3,7 +3,7 @@ class Counter extends HTMLElement {
     constructor() {
         super();
         
-        this.innerHTML = html`
+        this.innerHTML = /*html*/`
             <button>Clicks : ${count}</button>
         `;
 
